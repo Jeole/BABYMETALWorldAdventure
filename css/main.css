@@ -90,11 +90,12 @@ a.button{
 div.button
 {
 	width:30vh;
+	max-width:30vw;
 	border-style: solid;
 	border-image: url("../img/buttonBackground.png") 20 20 20 20 repeat;
 	border-width: 3px 3px 3px 3px;
-	display: inline-block;
-	margin: 0.5vh 2vw;
+
+	margin: 0.5vh auto;
 	color: #D2B478C8;
 }
 div.button.disabled
@@ -103,15 +104,15 @@ div.button.disabled
 	pointer-events: none;
 }
 
-#downloadParent
+div.downloadParent
 {
-
+	margin: 0 1vw;
 	display: inline-block;
 }
 
 #under-button
 {
-	width:30vh;
+	width:auto;
 	margin: 0vh 2vw;
 	text-align: center;
 	font-size: 2vmin;
@@ -119,6 +120,7 @@ div.button.disabled
 }
 #under-button > p 
 {
+	font-size: 1.8vh;
 	margin-top: 0;
 	margin-bottom: 0;
 }
@@ -147,9 +149,21 @@ a:visited
 	padding-right:0.5vw;
 }
 
+#version-number
+{
+	width:100%;
+	margin: 0 auto;
+	text-align:center;
+
+}
+#version-number > p 
+{
+	font-size: 2vh;
+	margin:0;
+}
 footer
 {
-	position:fixed;
+	position:absolute;
 	bottom:0;
 	height:auto;
 	width:100%;
