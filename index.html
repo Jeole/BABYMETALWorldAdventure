@@ -1,3 +1,9 @@
+---
+version: "v1.0.1"
+virustotal.win: "https://www.virustotal.com/#/file/8c0582268d0c0f904eeaa4d665f340d7c6a9092b92a6cd6ba6bfe48ec7a57220/detection"
+virustotal.linux: "https://www.virustotal.com/#/file/406ac832a216c3eed2f164c18705eb4cc456f4fe1e8902853f83bf8462c3f94d/detection"
+virustotal.mac: "https://www.virustotal.com/#/file/01161ef44595f73b9c54d405293e2dc8b5cb65643d88c1d0c61e174f239cd89d/detection"
+---
 <!DOCTYPE html>
 <html>
     <head>
@@ -45,31 +51,31 @@
 			<div class="centered buttons" id="buttons">
 				<div class="downloadParent">
 					<div class=" button" id="download">
-						<a id="download" class="button" href="https://github.com/Jeole/BABYMETALWorldAdventure/releases/download/v1.0.1/BMWAv1.0.1_Win.zip" onclick="gtag('event', 'win', {'event_category': 'download', 'event_label': 'v1.0.1'});"><i class="fab fa-windows plateform-icon"></i>DOWNLOAD</a>
+						<a id="download" class="button" href="https://github.com/Jeole/BABYMETALWorldAdventure/releases/download/{{page.version}}/BMWA{{page.version}}_Win.zip" onclick="gtag('event', 'win', {'event_category': 'download', 'event_label': '{{version}}'});"><i class="fab fa-windows plateform-icon"></i>DOWNLOAD</a>
 					</div>
 					<div id="under-button">
-						<p><a href="https://www.virustotal.com/#/file/8c0582268d0c0f904eeaa4d665f340d7c6a9092b92a6cd6ba6bfe48ec7a57220/detection" target="_blank" onclick="gtag('event', 'click', {'event_category': 'outbound', 'event_label': 'virusTotal'});">Virustotal</a></p>
+						<p><a href="{{page.virustotal.win}}" target="_blank" onclick="gtag('event', 'click', {'event_category': 'outbound', 'event_label': 'virusTotal'});">Virustotal</a></p>
 					</div>
 				</div>
 				<div class="downloadParent">
 					<div class=" button" id="download">
-						<a id="download" class="button" href="https://github.com/Jeole/BABYMETALWorldAdventure/releases/download/v1.0.1/BMWAv1.0.1_Linux.zip" onclick="gtag('event', 'linux', {'event_category': 'download', 'event_label': 'v1.0.1'});"><i class="fab fa-linux plateform-icon"></i>DOWNLOAD</a>
+						<a id="download" class="button" href="https://github.com/Jeole/BABYMETALWorldAdventure/releases/download/{{page.version}}/BMWA{{page.version}}_Linux.zip" onclick="gtag('event', 'linux', {'event_category': 'download', 'event_label': '{{version}}'});"><i class="fab fa-linux plateform-icon"></i>DOWNLOAD</a>
 					</div>
 					<div id="under-button">
-						<p><a href="https://www.virustotal.com/#/file/406ac832a216c3eed2f164c18705eb4cc456f4fe1e8902853f83bf8462c3f94d/detection" target="_blank" onclick="gtag('event', 'click', {'event_category': 'outbound', 'event_label': 'virusTotal'});">Virustotal</a></p>
+						<p><a href="{{page.virustotal.linux}}" target="_blank" onclick="gtag('event', 'click', {'event_category': 'outbound', 'event_label': 'virusTotal'});">Virustotal</a></p>
 					</div>
 				</div>
 				<div class="downloadParent">
 					<div class=" button" id="download">
-						<a id="download" class="button" href="https://github.com/Jeole/BABYMETALWorldAdventure/releases/download/v1.0.1/BMWAv1.0.1_Mac.zip" onclick="gtag('event', 'mac', {'event_category': 'download', 'event_label': 'v1.0.1'});"><i class="fab fa-apple plateform-icon"></i>DOWNLOAD</a>
+						<a id="download" class="button" href="https://github.com/Jeole/BABYMETALWorldAdventure/releases/download/{{page.version}}/BMWA{{page.version}}_Mac.zip" onclick="gtag('event', 'mac', {'event_category': 'download', 'event_label': '{{version}}'});"><i class="fab fa-apple plateform-icon"></i>DOWNLOAD</a>
 					</div>
 					<div id="under-button">
-						<p><a href="https://www.virustotal.com/#/file/01161ef44595f73b9c54d405293e2dc8b5cb65643d88c1d0c61e174f239cd89d/detection" target="_blank" onclick="gtag('event', 'click', {'event_category': 'outbound', 'event_label': 'virusTotal'});">Virustotal</a></p>
+						<p><a href="{{page.virustotal.mac}}" target="_blank" onclick="gtag('event', 'click', {'event_category': 'outbound', 'event_label': 'virusTotal'});">Virustotal</a></p>
 					</div>
 				</div>
 			</div>
 			<div id="version-number">
-				<p>v1.0.1</p>
+				<p>{{page.version}}</p>
 			</div>
 			<footer class="centered">
 				<small>Not affiliated with BABYMETAL</small>
